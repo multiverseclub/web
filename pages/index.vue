@@ -1,11 +1,19 @@
 <template>
-  <div class="main-content">
-    <nuxt-link
-      v-for="(review, i) in reviews"
-      :key="i"
-      :to="`reviews/${review.slug}`"
-      >{{ review.title }}</nuxt-link
-    >
+  <div class="page">
+    <div class="header">
+      <nuxt-link to="manifesto">MANIFESTO</nuxt-link>
+      <nuxt-link to="contacts">CONTACTS</nuxt-link>
+    </div>
+
+    <div class="main-content">
+      <h1>MULTIVERSE CLUB</h1>
+      <nuxt-link
+        v-for="(review, i) in reviews"
+        :key="i"
+        :to="`reviews/${review.slug}`"
+        >{{ review.title }}</nuxt-link
+      >
+    </div>
   </div>
 </template>
 
@@ -25,3 +33,22 @@ export default {
   },
 };
 </script>
+
+
+
+<style>
+.page {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.main-content {
+  text-align: center;
+}
+</style>
+
