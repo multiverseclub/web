@@ -1,10 +1,5 @@
 <template>
   <div class="page">
-    <div class="header">
-      <nuxt-link to="manifesto">MANIFESTO</nuxt-link>
-      <nuxt-link to="contacts">CONTACTS</nuxt-link>
-    </div>
-
     <div class="main-content">
       <h1>MULTIVERSE CLUB</h1>
       <nuxt-link
@@ -38,13 +33,6 @@ export default {
 
 <style>
 .page {
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
 }
 
 .main-content {
