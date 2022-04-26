@@ -14,3 +14,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.AppHeader {
+  height: 20vh;
+}
+</style>

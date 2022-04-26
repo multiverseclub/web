@@ -2,7 +2,11 @@
   <div class="main-content">
     <div class="contacts">
       <a href="mailto:">multiverse.controlroom@gmail.com</a>
-      <a href="https://www.instagram.com/multiverseclubit/">instagram</a>
+
+      <br />
+      <a href="https://www.instagram.com/multiverseclubit/"
+        >@multiverseclubit</a
+      >
     </div>
   </div>
 </template>
@@ -11,16 +15,20 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss" scoped>
 .main-content {
   height: 100vh;
-}
-.contacts {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 50ch;
-  margin: auto;
-  text-align: center;
+  align-items: center;
+
+  .contacts {
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+  }
+
+  a {
+    font-size: 144px;
+  }
 }
 </style>
